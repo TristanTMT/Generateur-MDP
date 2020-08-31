@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mot de Passe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body>
+    
+    <div id="password-generator">
+        <input value="Générateur de MDP" id="password-output">
+        <div class="range">
+            <input
+                type="range"
+                min="4"
+                max="24"
+                step="1"
+                value="8"
+                id="password-length"
+                oninput="document.getElementById('display-password-length').value=this.value"
+            >
+            <input 
+                type="text"
+                value="8"
+                maxlength="2"
+                id="display-password-length"
+                oninput="document.getElementById('password-length').value=this.value"
+            >
+        </div>
+
+        <div class="flex">
+            <input type="checkbox" id="lowercase" checked="checked">
+            <label for="lowercase">a-z</label>
+
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">A-Z</label>
+
+            <input type="checkbox" id="numbers">
+            <label for="numbers">0-9</label>
+
+            <input type="checkbox" id="symbols">
+            <label for="symbols">!-?</label>
+        </div>
+
+        <button id="generateButton" type="button" onclick="generateButton()">Générer un mot de passe aléatoire !</button>
+
+    </div>
+
+
+
+
+
+
+    
+
+
+
+        <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

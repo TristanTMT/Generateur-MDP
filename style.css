@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Cuprum', sans-serif;
+}
+input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+body {
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: blue;
+}
+
+#password-generator {
+    border: solid 1px black;
+}
+
+#password-output {
+    text-align: center;
+    font-size: 30px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.flex {
+    text-align: center;
+    font-size: 15px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#generateButton {
+    text-align: center;
+    font-size: 15px;
+    padding: 1rem;
+}
